@@ -12,7 +12,7 @@
                 <li style="padding: 3px; list-style-type: none; margin-left: 5px; list-style-position: outside; width: 490px;">
                     <div style="display: inline-block; width: 40px; vertical-align: top;">
                         <a href="{$item.avatar.url}" style="text-decoration: none;" {if !empty($item.avatar.title)}title="{$item.avatar.title}"{/if}>
-                            <img width="40" height="40" src="{$item.avatar.src}">
+                            <img width="40" height="40" alt="($item.avatar.title)" src="{$item.avatar.src}">
                         </a>
                     </div>
                     <div style="display: inline-block; word-wrap: break-word; vertical-align: top; width: 400px;">
@@ -27,7 +27,7 @@
                             {if !empty($item.contentImage.url)}
                                 <a href="{$item.contentImage.url}">
                             {/if}
-                            <img src="{$item.contentImage.src}" width="40" {if !empty($item.contentImage.title)}title="{$item.contentImage.title}"{/if}>
+                            <img alt="{$item.contentImage.title}" src="{$item.contentImage.src}" width="40" {if !empty($item.contentImage.title)}title="{$item.contentImage.title}"{/if}>
                             {if !empty($item.contentImage.url)}
                                 </a>
                             {/if}
